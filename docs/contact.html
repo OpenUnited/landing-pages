@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>OpenUnited - Empowering Global Talent</title>
+    <meta content="OpenUnited connects skilled contributors with enterprise-grade digital products." name="description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Theme favicon -->
+    <link rel="shortcut icon" href="/landing-pages/assets/favicon-ByuwSyI9.ico" />
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/card3d@2.6.5/dist/card3d.min.js"></script>
+  <script type="module" crossorigin src="/landing-pages/assets/app-CSg-U0Vc.js"></script>
+  <link rel="stylesheet" crossorigin href="/landing-pages/assets/app-CUsfgHXO.css">
+</head>
+<body>
+<div class="bg-neutral py-1.5 text-center text-xs text-neutral-content md:text-sm">
+  <span>
+    <!-- TODO: Add a relevant announcement or message for OpenUnited -->
+    Welcome to OpenUnited - Empowering Global Talent
+  </span>
+</div>
+
+<div
+  id="navbar-wrapper"
+  class="sticky top-0 z-10 border-b bg-base-100 lg:bg-opacity-95 lg:backdrop-blur-sm"
+  x-data="{ atTop: false }"
+  :class="{ 'border-base-content/10': atTop, 'border-transparent': !atTop}"
+  @scroll.window="atTop = (window.pageYOffset < 30) ? false: true">
+  <div class="container">
+    <nav class="navbar px-0">
+      <div class="navbar-start gap-2">
+        <div class="flex-none lg:hidden">
+          <label for="my-drawer" id="my-drawer-trigger" aria-label="open sidebar" class="btn btn-square btn-ghost">
+            <i class="icon-menu inline-block text-xl"></i>
+          </label>
+        </div>
+
+        <!-- Navbar Brand logo -->
+        <a href="#" class="text-xl font-bold tracking-tighter">OpenUnited</a>
+      </div>
+
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal menu-sm gap-2 px-1">
+          <li class="font-medium"><a href="index.html">Home</a></li>
+          <li class="font-medium"><a href="about.html">About Us</a></li>
+          <li class="font-medium"><a href="how-it-works.html">How It Works</a></li>
+          <li class="font-medium"><a href="features.html">Features</a></li>
+          <li class="font-medium"><a href="why-openunited.html">Why OpenUnited?</a></li>
+          <li class="font-medium"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="navbar-end gap-3">
+        <a class="btn btn-ghost btn-sm" onclick="register_modal.showModal()">Register</a>
+        <a class="btn btn-primary btn-sm" onclick="login_modal.showModal()">Login</a>
+      </div>
+    </nav>
+
+    <!-- sm screen menu (drawer) -->
+    <div class="drawer">
+      <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-side">
+        <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+
+        <ul class="menu min-h-full w-80 gap-2 bg-base-100 p-4 text-base-content">
+          <li class="font-medium"><a href="index.html">Home</a></li>
+          <li class="font-medium"><a href="about.html">About Us</a></li>
+          <li class="font-medium"><a href="how-it-works.html">How It Works</a></li>
+          <li class="font-medium"><a href="features.html">Features</a></li>
+          <li class="font-medium"><a href="why-openunited.html">Why OpenUnited?</a></li>
+          <li class="font-medium"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="py-8 lg:py-20" id="contact">
+    <div class="container">
+        <h1 class="text-4xl font-bold">Contact Us / Get Started</h1>
+        <div class="mt-8">
+            <h2 class="text-2xl font-semibold">For Contributors</h2>
+            <a href="signup.html" class="btn btn-primary mt-4">Sign Up</a>
+            <!-- TODO: Add onboarding instructions for contributors -->
+        </div>
+        <div class="mt-8">
+            <h2 class="text-2xl font-semibold">For Enterprises</h2>
+            <a href="consultation.html" class="btn btn-primary mt-4">Book a Consultation</a>
+            <!-- TODO: Add details about consultation options for enterprises -->
+        </div>
+    </div>
+</section>
+
+<footer class="bg-neutral text-neutral-content" data-theme="dark">
+  <div class="grid lg:grid-cols-2">
+    <div>
+      <div class="md-12 border-y border-e border-white/20 p-8 sm:p-10 md:px-16 xl:px-40 xl:py-16">
+        <div class="grid grid-cols-2">
+          <p class="text-xl font-semibold">OpenUnited</p>
+          <p class="text-base">Empowering global talent to drive digital product success.</p>
+        </div>
+      </div>
+
+      <div class="md-12 border-e border-white/20 p-8 sm:p-10 md:px-16 xl:px-40 xl:py-16">
+        <div class="grid grid-cols-2 gap-6 md:grid-cols-3">
+          <div class="flex flex-col gap-5">
+            <h2 class="text-xl font-medium">Company</h2>
+            <div class="space-y-2">
+              <div>
+                <a class="text-base transition-all duration-500 hover:text-primary" href="index.html">
+                  Home
+                </a>
+              </div>
+              <div>
+                <a class="text-base transition-all duration-500 hover:text-primary" href="about.html">
+                  About Us
+                </a>
+              </div>
+              <div>
+                <a class="text-base transition-all duration-500 hover:text-primary" href="how-it-works.html">
+                  How It Works
+                </a>
+              </div>
+              <div>
+                <a class="text-base transition-all duration-500 hover:text-primary" href="features.html">
+                  Features
+                </a>
+              </div>
+              <div>
+                <a class="text-base transition-all duration-500 hover:text-primary" href="why-openunited.html">
+                  Why OpenUnited?
+                </a>
+              </div>
+              <div>
+                <a class="text-base transition-all duration-500 hover:text-primary" href="contact.html">
+                  Contact
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- TODO: Add additional footer sections if needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-t border-white/20 px-8 py-4 text-center lg:px-40">
+    🌼 Made with
+    <a class="link-hover link" href="https://daisyui.com" target="_blank">daisyUI</a>
+  </div>
+</footer>
+ <!-- Theme Toggle -->
+<div class="fixed bottom-5 end-5 z-10 flex flex-col items-center">
+  <div class="dropdown dropdown-end dropdown-top">
+    <div class="btn mt-2" role="button" tabindex="0">
+      Theme
+      <svg
+        class="inline-block h-2 w-2 rotate-180 fill-current opacity-60"
+        height="12px"
+        viewBox="0 0 2048 2048"
+        width="12px"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+      </svg>
+    </div>
+    <ul
+      class="menu dropdown-content menu-xs z-[1] w-52 rounded-box bg-base-300 shadow-2xl"
+      tabindex="0">
+      <li>
+        <button data-set-theme="" data-act-class="active">
+          <i class="icon-airplay text-lg"></i>
+          System
+        </button>
+      </li>
+      <li>
+        <button data-set-theme="light" data-act-class="active">
+          <i class="icon-sun text-lg"></i>
+          Light
+        </button>
+      </li>
+      <li>
+        <button data-set-theme="dark" data-act-class="active">
+          <i class="icon-moon text-lg"></i>
+          Dark
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html> 

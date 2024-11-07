@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {{> title-meta}}
+</head>
+
+<body>
+{{> topbar}}
+
+<section class="py-8 lg:py-20" id="home">
+    <div class="container">
+        <div class="grid gap-12 lg:grid-cols-2">
+            <div>
+                <h1 class="text-4xl font-black tracking-tighter lg:text-6xl lg:leading-none">
+                    Empowering Global Talent to Drive Digital Product Success
+                </h1>
+                <p class="mt-8 text-lg">
+                    OpenUnited connects skilled contributors with enterprise-grade digital products, using AI-powered challenges and bounties to accelerate innovation.
+                </p>
+                <div class="mt-16 inline-flex gap-3">
+                    <button class="btn btn-primary">Explore Challenges</button>
+                    <button class="btn btn-ghost">See How We Support Enterprises</button>
+                </div>
+            </div>
+            <div>
+                <img alt="Contributors" src="assets/images/contributors.jpg" class="rounded-lg"/>
+            </div>
+        </div>
+        <div class="mt-12">
+            <h2 class="text-2xl font-semibold">Key Messages</h2>
+            <p>For Contributors: Work on impactful digital products, build a public showcase, and earn rewards through structured bounties.</p>
+            <p>For Enterprises: A flexible, AI-powered platform to enhance digital product management through targeted initiatives.</p>
+        </div>
+    </div>
+</section>
+
+<!-- TODO: Add more sections as needed based on the content outline -->
+
+{{> footer}} {{> theme-toggle}}
+</body>
+</html>
