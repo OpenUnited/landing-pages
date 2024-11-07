@@ -12,8 +12,8 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/card3d@2.6.5/dist/card3d.min.js"></script>
-  <script type="module" crossorigin src="/landing-pages/assets/app-6AciB_7b.js"></script>
-  <link rel="stylesheet" crossorigin href="/landing-pages/assets/app-BDiRcQhk.css">
+  <script type="module" crossorigin src="/landing-pages/assets/app-CRxpGJCl.js"></script>
+  <link rel="stylesheet" crossorigin href="/landing-pages/assets/app-ChXbgWwm.css">
 </head>
 <body>
 <div class="bg-neutral py-1.5 text-center text-xs text-neutral-content md:text-sm">
@@ -80,27 +80,96 @@
 
 <section class="py-8 lg:py-20" id="how-it-works">
     <div class="container">
-        <h1 class="text-4xl font-bold">How It Works</h1>
-        <img alt="How It Works" src="https://via.placeholder.com/800x400" class="rounded-lg mt-4"/>
-        <div class="grid gap-12 lg:grid-cols-2 mt-8">
-            <div>
-                <h2 class="text-2xl font-semibold">For Contributors</h2>
-                <ul class="mt-4 list-disc list-inside">
-                    <li>Engage with Lasting Digital Products: Work directly on real products, not just transient projects, allowing you to build a public showcase and gain recognition for meaningful contributions.</li>
-                    <li>Take on Challenges and Claim Bounties: Products host a variety of challenges, each with either USD or point-based bounties, motivating contributors to engage and showcase their expertise.</li>
-                    <li>Showcase Your Contributions: Each successful challenge adds to your portfolio, visible on OpenUnited, highlighting your achievements across various products.</li>
+        <h1 class="text-4xl font-bold text-center">How It Works</h1>
+        <p class="mt-4 text-xl text-center text-gray-600 max-w-3xl mx-auto">
+            OpenUnited offers tailored solutions for contributors, tech companies, and enterprises, powered by our AI-driven marketplace platform.
+        </p>
+        
+        <div class="grid gap-8 lg:grid-cols-3 mt-12">
+            <div class="bg-base-100 p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold mb-4">For Contributors</h2>
+                <p class="text-gray-600 mb-4">
+                    Build your portfolio and advance your career by contributing to real-world products.
+                </p>
+                <ul class="space-y-3 text-gray-600">
+                    <li>• Work on lasting digital products</li>
+                    <li>• Claim bounties and earn rewards</li>
+                    <li>• Build a public portfolio</li>
+                    <li>• Connect with top tech companies</li>
+                    <li>• Learn from real-world challenges</li>
                 </ul>
+                <div class="mt-6">
+                    <a href="#" class="btn btn-primary" onclick="openVideoModal('H2N4IfaGZ94')">Watch How It Works</a>
+                </div>
             </div>
-            <div>
-                <h2 class="text-2xl font-semibold">For Enterprises</h2>
-                <ul class="mt-4 list-disc list-inside">
-                    <li>Flexible Entry Points for Product Innovation: Buildathons, Fixathons, Internal Competitions, Cross-Team Collaboration Incentives, Nearshoring Overlay.</li>
-                    <li>Transparent Investment and Resource Tracking: Through a points and bounties system, track investments across product portfolios, ensuring clear, efficient resource allocation and accountability.</li>
+
+            <div class="bg-base-100 p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold mb-4">For Tech Companies</h2>
+                <p class="text-gray-600 mb-4">
+                    Transform your ecosystem products into engaging opportunities for global talent.
+                </p>
+                <ul class="space-y-3 text-gray-600">
+                    <li>• Revitalize ecosystem products</li>
+                    <li>• Access global talent pool</li>
+                    <li>• AI-powered issue management</li>
+                    <li>• Track contributions and impact</li>
+                    <li>• Accelerate product development</li>
                 </ul>
+                <div class="mt-6">
+                    <a href="#" class="btn btn-primary" onclick="openVideoModal('urIf0Ld9adE')">Watch How It Works</a>
+                </div>
+            </div>
+
+            <div class="bg-base-100 p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold mb-4">For Enterprises</h2>
+                <p class="text-gray-600 mb-4">
+                    Optimize internal engineering capabilities with flexible adoption strategies.
+                </p>
+                <ul class="space-y-3 text-gray-600">
+                    <li>• Start with focused events</li>
+                    <li>• Drive internal innovation</li>
+                    <li>• Enable cross-team collaboration</li>
+                    <li>• Optimize resource allocation</li>
+                    <li>• Scale engineering capacity</li>
+                </ul>
+                <div class="mt-6">
+                    <a href="enterprise-support.html" class="btn btn-primary">Learn More</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Video Modal -->
+<div id="videoModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+    <div class="bg-white p-6 rounded-lg max-w-3xl w-full mx-4">
+        <div class="flex justify-between items-center mb-4">
+            <h3 class="text-xl font-semibold">How It Works</h3>
+            <button onclick="closeVideoModal()" class="text-gray-500 hover:text-gray-700">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="relative" style="padding-bottom: 56.25%">
+            <iframe id="videoFrame" class="absolute inset-0 w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openVideoModal(videoId) {
+        document.getElementById('videoFrame').src = `https://www.youtube.com/embed/${videoId}`;
+        document.getElementById('videoModal').classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeVideoModal() {
+        document.getElementById('videoFrame').src = '';
+        document.getElementById('videoModal').classList.add('hidden');
+        document.body.style.overflow = 'auto';
+    }
+</script>
 
 <footer class="bg-base-200 text-base-content">
     <div class="container py-8">
