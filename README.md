@@ -16,7 +16,9 @@ This repository contains the source code for the OpenUnited website, which conne
 - `src/how-it-works.html` - **How It Works**: Explains the process for both contributors and enterprises, detailing engagement methods, challenges, and tracking systems.
 - `src/features.html` - **Features**: Lists the key features of OpenUnited, including dynamic portfolio management, AI-driven optimization, and real-time accountability.
 - `src/why-openunited.html` - **Why OpenUnited?**: Outlines the benefits for contributors and enterprises, focusing on experience, rewards, and non-disruptive product enhancement.
+- `src/enterprise-support.html` - **Enterprise Support**: Provides information about dedicated enterprise support services, including implementation assistance, custom solutions, and priority support channels.
 - `src/contact.html`
+- `src/terms.html` - **Terms of Service**: Detailed terms and conditions for using the OpenUnited platform, including user eligibility, account security, contributions, rewards, and legal requirements.
 
 ## Getting Started
 
