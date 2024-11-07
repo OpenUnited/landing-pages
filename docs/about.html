@@ -12,13 +12,12 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/card3d@2.6.5/dist/card3d.min.js"></script>
-  <script type="module" crossorigin src="/landing-pages/assets/app-CSg-U0Vc.js"></script>
-  <link rel="stylesheet" crossorigin href="/landing-pages/assets/app-CUsfgHXO.css">
+  <script type="module" crossorigin src="/landing-pages/assets/app-D23f5RPQ.js"></script>
+  <link rel="stylesheet" crossorigin href="/landing-pages/assets/app-iz2A_hBn.css">
 </head>
 <body>
 <div class="bg-neutral py-1.5 text-center text-xs text-neutral-content md:text-sm">
   <span>
-    <!-- TODO: Add a relevant announcement or message for OpenUnited -->
     Welcome to OpenUnited - Empowering Global Talent
   </span>
 </div>
@@ -48,14 +47,14 @@
           <li class="font-medium"><a href="about.html">About Us</a></li>
           <li class="font-medium"><a href="how-it-works.html">How It Works</a></li>
           <li class="font-medium"><a href="features.html">Features</a></li>
-          <li class="font-medium"><a href="why-openunited.html">Why OpenUnited?</a></li>
+          <li class="font-medium"><a href="enterprise-support.html">OpenUnited for Enterprises</a></li>
           <li class="font-medium"><a href="contact.html">Contact</a></li>
         </ul>
       </div>
 
       <div class="navbar-end gap-3">
-        <a class="btn btn-ghost btn-sm" onclick="register_modal.showModal()">Register</a>
-        <a class="btn btn-primary btn-sm" onclick="login_modal.showModal()">Login</a>
+        <a class="btn btn-ghost btn-sm" onclick="register_modal.showModal()">Sign in</a>
+        <a class="btn btn-primary btn-sm" onclick="login_modal.showModal()">Sign up</a>
       </div>
     </nav>
 
@@ -81,8 +80,37 @@
 <section class="py-8 lg:py-20" id="about">
     <div class="container">
         <h1 class="text-4xl font-bold">About Us</h1>
-        <p class="mt-4">Mission: To connect skilled contributors with impactful digital products in a marketplace that drives collaboration, career growth, and ecosystem innovation.</p>
-        <p class="mt-4">Vision: To be the leading global platform where digital talent and enterprises collaborate to create, enhance, and sustain impactful digital products.</p>
+        <img alt="Bee Theme" src="https://via.placeholder.com/800x400?text=Bee+Theme" class="rounded-lg mt-4"/>
+        <div class="mt-8">
+            <h2 class="text-2xl font-semibold">Our Mission</h2>
+            <p class="mt-4 text-gray-600">
+                At OpenUnited, we are dedicated to bridging the gap between skilled contributors and impactful digital products. Our mission is to foster a collaborative marketplace that drives innovation, career growth, and ecosystem advancement.
+            </p>
+        </div>
+        <div class="mt-8">
+            <h2 class="text-2xl font-semibold">Our Vision</h2>
+            <p class="mt-4 text-gray-600">
+                We envision a world where digital talent and enterprises seamlessly collaborate to create, enhance, and sustain transformative digital products. OpenUnited aims to be the leading global platform for this dynamic interaction.
+            </p>
+        </div>
+        <div class="mt-8">
+            <h2 class="text-2xl font-semibold">Contributor Video</h2>
+            <div class="mt-4">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/H2N4IfaGZ94" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="mt-4 text-gray-600">
+                Are you a recent grad eager to break into the tech scene, a seasoned developer looking to try out new languages, or a creative soul aiming to make your mark in UX design? OpenUnited provides a clear path for talented individuals like you to contribute, learn, and shine. We transform hidden projects into accessible opportunities, allowing you to focus on what you do best. Connect with a global community, collaborate on real projects, build your portfolio, and earn the recognition you deserve. Join OpenUnited today and kickstart your journey.
+            </p>
+        </div>
+        <div class="mt-8">
+            <h2 class="text-2xl font-semibold">Demand Side Video</h2>
+            <div class="mt-4">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/urIf0Ld9adE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p class="mt-4 text-gray-600">
+                Discover how OpenUnited helps tech companies unlock the potential of their code repositories. By transforming obscure projects into dynamic, user-friendly products, we connect you with a global network of talented contributors. Leverage our platform to accelerate development, engage with experts, and elevate your products to new heights. Join OpenUnited today and transform your overlooked tools into your greatest strengths.
+            </p>
+        </div>
         <h2 class="mt-8 text-2xl font-semibold">Core Values</h2>
         <ul class="mt-4 list-disc list-inside">
             <li>Collaboration: Building a community for talent and enterprises to connect and contribute to long-term product success.</li>
@@ -92,102 +120,19 @@
     </div>
 </section>
 
-<footer class="bg-neutral text-neutral-content" data-theme="dark">
-  <div class="grid lg:grid-cols-2">
-    <div>
-      <div class="md-12 border-y border-e border-white/20 p-8 sm:p-10 md:px-16 xl:px-40 xl:py-16">
-        <div class="grid grid-cols-2">
-          <p class="text-xl font-semibold">OpenUnited</p>
-          <p class="text-base">Empowering global talent to drive digital product success.</p>
-        </div>
-      </div>
-
-      <div class="md-12 border-e border-white/20 p-8 sm:p-10 md:px-16 xl:px-40 xl:py-16">
-        <div class="grid grid-cols-2 gap-6 md:grid-cols-3">
-          <div class="flex flex-col gap-5">
-            <h2 class="text-xl font-medium">Company</h2>
-            <div class="space-y-2">
-              <div>
-                <a class="text-base transition-all duration-500 hover:text-primary" href="index.html">
-                  Home
-                </a>
-              </div>
-              <div>
-                <a class="text-base transition-all duration-500 hover:text-primary" href="about.html">
-                  About Us
-                </a>
-              </div>
-              <div>
-                <a class="text-base transition-all duration-500 hover:text-primary" href="how-it-works.html">
-                  How It Works
-                </a>
-              </div>
-              <div>
-                <a class="text-base transition-all duration-500 hover:text-primary" href="features.html">
-                  Features
-                </a>
-              </div>
-              <div>
-                <a class="text-base transition-all duration-500 hover:text-primary" href="why-openunited.html">
-                  Why OpenUnited?
-                </a>
-              </div>
-              <div>
-                <a class="text-base transition-all duration-500 hover:text-primary" href="contact.html">
-                  Contact
-                </a>
-              </div>
+<footer class="bg-base-200 text-base-content">
+    <div class="container py-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div>
+                <h2 class="font-bold">Company</h2>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="enterprise-support.html">OpenUnited for Enterprises</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
             </div>
-          </div>
-          <!-- TODO: Add additional footer sections if needed -->
         </div>
-      </div>
     </div>
-  </div>
-
-  <div class="border-t border-white/20 px-8 py-4 text-center lg:px-40">
-    🌼 Made with
-    <a class="link-hover link" href="https://daisyui.com" target="_blank">daisyUI</a>
-  </div>
 </footer>
- <!-- Theme Toggle -->
-<div class="fixed bottom-5 end-5 z-10 flex flex-col items-center">
-  <div class="dropdown dropdown-end dropdown-top">
-    <div class="btn mt-2" role="button" tabindex="0">
-      Theme
-      <svg
-        class="inline-block h-2 w-2 rotate-180 fill-current opacity-60"
-        height="12px"
-        viewBox="0 0 2048 2048"
-        width="12px"
-        xmlns="http://www.w3.org/2000/svg">
-        <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
-      </svg>
-    </div>
-    <ul
-      class="menu dropdown-content menu-xs z-[1] w-52 rounded-box bg-base-300 shadow-2xl"
-      tabindex="0">
-      <li>
-        <button data-set-theme="" data-act-class="active">
-          <i class="icon-airplay text-lg"></i>
-          System
-        </button>
-      </li>
-      <li>
-        <button data-set-theme="light" data-act-class="active">
-          <i class="icon-sun text-lg"></i>
-          Light
-        </button>
-      </li>
-      <li>
-        <button data-set-theme="dark" data-act-class="active">
-          <i class="icon-moon text-lg"></i>
-          Dark
-        </button>
-      </li>
-    </ul>
-  </div>
-</div>
-
 </body>
 </html> 
