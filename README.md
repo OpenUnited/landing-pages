@@ -1,4 +1,4 @@
-# OpenUnited Website
+# OpenUnited Landing Pages
 
 This repository contains the source code for the OpenUnited website, which connects skilled contributors with enterprise-grade digital products.
 
